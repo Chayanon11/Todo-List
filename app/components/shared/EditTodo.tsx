@@ -8,7 +8,11 @@ import { useState } from "react";
 import { todoType } from "@/types/todoType";
 import { BiEdit } from "react-icons/bi";
 
-const EditTodo = ({ todo }: todoType) => {
+interface ChangeTodoProps {
+  todo: todoType;
+}
+
+const EditTodo: React.FC<ChangeTodoProps> = ({ todo }) => {
   const [editTodo, setEditTodo] = useState(false);
 
   const handleEdit = () => {
