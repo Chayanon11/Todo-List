@@ -1,13 +1,18 @@
 import ChangeTodo from "./ChangeTodo";
-import todoType from "@/types/todoType";
+import { todoType } from "@/types/todoType";
 import EditTodo from "./EditTodo";
 import DeleteTodo from "./DeleteTodo";
 
-const Todo = ({ todo }: todoType) => {
+interface TodoProps {
+  todo: todoType;
+}
+
+const Todo: React.FC<TodoProps> = ({ todo }) => {
   const todoStyle = {
-    textDecoration: todo.isCompleted === true ? "line-through" : "none",
-    opacity: todo.isCompleted === true ? 0.5 : 1,
+    textDecoration: todo.isCompleted ? "line-through" : "none",
+    opacity: todo.isCompleted ? 0.5 : 1,
   };
+
   return (
     <div className="flex justify-center">
       <div
