@@ -2,8 +2,8 @@ import Form from "../ui/Form";
 import Button from "../ui/Button";
 import Input from "../ui/Input";
 import { AiOutlineCheckCircle } from "react-icons/ai";
-import { changeStatus } from "@/app/actions/todoActions";
-import { todoType } from "@/types/todoType";
+import { changeStatus } from "../../actions/todoActions";
+import { todoType } from "../../../types/todoType";
 
 interface ChangeTodoProps {
   todo: todoType;

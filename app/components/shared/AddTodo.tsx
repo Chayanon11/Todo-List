@@ -2,7 +2,7 @@ import React from "react";
 import Form from "../ui/Form";
 import Input from "../ui/Input";
 import Button from "../ui/Button";
-import { create } from "@/app/actions/todoActions";
+import { create } from "../../actions/todoActions";
 
 const AddTodo = () => {
   return (

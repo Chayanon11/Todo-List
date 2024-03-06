@@ -1,5 +1,5 @@
 import AddTodo from "./components/shared/AddTodo";
-import { prisma } from "@/utils/prisma";
+import { prisma } from "../utils/prisma";
 import Todo from "./components/shared/Todo";
 
 async function getData() {

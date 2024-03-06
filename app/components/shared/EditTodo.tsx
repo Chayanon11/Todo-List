@@ -1,11 +1,11 @@
 "use client";
 
-import { edit } from "@/app/actions/todoActions";
+import { edit } from "../../actions/todoActions";
 import Form from "../ui/Form";
 import Input from "../ui/Input";
 import Button from "../ui/Button";
 import { useState } from "react";
-import { todoType } from "@/types/todoType";
+import { todoType } from "../../../types/todoType";
 import { BiEdit } from "react-icons/bi";
 
 interface ChangeTodoProps {
