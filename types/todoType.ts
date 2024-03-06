@@ -3,4 +3,5 @@ export interface todoType {
   title: string | null;
   isCompleted: boolean;
   todo?: todoType;
+  text?: string;
 }
