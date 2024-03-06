@@ -1,4 +1,4 @@
-export default interface TodoType {
+export interface TodoType {
   id: String;
   title: String | null;
   isCompleted: Boolean;

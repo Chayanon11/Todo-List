@@ -1,7 +1,7 @@
 import AddTodo from "./components/shared/AddTodo";
-import { prisma } from "@/utils/prisma";
+import { prisma } from "../utils/prisma";
 import Todo from "./components/shared/Todo";
-import todoType from "@/types/todoType";
+import { todoType } from "../types/todoType";
 
 interface TodoProps {
   todo: todoType;
