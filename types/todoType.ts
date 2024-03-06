@@ -1,6 +1,6 @@
-export interface TodoType {
-  id: String;
-  title: String | null;
-  isCompleted: Boolean;
-  text: String;
-}
+export type todoType = {
+  id: string;
+  title?: string | null;
+  isCompleted: boolean;
+  createdAt?: Date;
+};
