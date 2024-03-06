@@ -30,7 +30,7 @@ const EditTodo: React.FC<ChangeTodoProps> = ({ todo }) => {
       {editTodo ? (
         <Form action={edit} onSubmit={handleSubmit}>
           <Input name="inputId" value={todo.id} type="hidden" />
-          <div className="flex justify-ccenter ">
+          <div className="flex justify-center ">
             <Input type="text" name="newTitle" placeholder="Edit Todo..." />
             <Button type="submit" text="Save" />
           </div>
