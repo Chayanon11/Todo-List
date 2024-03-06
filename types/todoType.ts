@@ -1,7 +1,7 @@
 export interface todoType {
-  id: Text;
-  title: Text | null;
+  id: string;
+  title: string | null;
   isCompleted: boolean;
   todo: todoType;
-  text: Text;
+  text: string;
 }
