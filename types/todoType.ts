@@ -1,7 +1,6 @@
-export interface todoType {
-  id: string;
-  title: string | null;
-  isCompleted: boolean;
-  todo: todoType;
-  text: string;
+export default interface TodoType {
+  id: String;
+  title: String | null;
+  isCompleted: Boolean;
+  text: String;
 }
