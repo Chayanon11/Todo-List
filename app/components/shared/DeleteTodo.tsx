@@ -7,7 +7,11 @@ import Input from "../ui/Input";
 import { BsFillTrashFill } from "react-icons/bs";
 import { todoType } from "@/types/todoType";
 
-const DeleteTodo = ({ todo }: todoType) => {
+interface ChangeTodoProps {
+  todo: todoType;
+}
+
+const DeleteTodo: React.FC<ChangeTodoProps> = ({ todo }) => {
   return (
     <Form action={deleteTodo}>
       <Input type="hidden" name="inputId" value={todo.id} />
