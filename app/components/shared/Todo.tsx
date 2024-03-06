@@ -9,8 +9,8 @@ interface TodoProps {
 
 const Todo: React.FC<TodoProps> = ({ todo }) => {
   const todoStyle = {
-    textDecoration: todo.completed ? "line-through" : "none",
-    opacity: todo.completed ? 0.5 : 1,
+    textDecoration: todo.isCompleted ? "line-through" : "none",
+    opacity: todo.isCompleted ? 0.5 : 1,
   };
 
   return (
